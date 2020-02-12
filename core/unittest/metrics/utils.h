@@ -44,6 +44,8 @@
 
 #ifdef FIU_ENABLE
 #define FIU_ENABLE_FIU(name) fiu_enable(name, 1, nullptr, 0)
+#else
+#define FIU_ENABLE_FIU(name)
 #endif
 
 void
